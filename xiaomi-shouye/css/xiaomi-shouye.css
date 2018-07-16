@@ -37,7 +37,7 @@ li {
 }
 
 #center {
-	width: 80%;
+	width: 65%;
 	margin: 0 auto;
 
 }
@@ -94,7 +94,7 @@ a {
 }
 /*content父元素，定位基础*/
 #content {
-	width: 80%;
+	width: 65%;
 	margin: 0px auto;
 	position: relative;
 	left: 0px;
@@ -221,7 +221,7 @@ a {
 	position: absolute;
 	left: 234px;
 	top: 100px;
-	width: 908px;
+	width: 1012px;
 	height: 458px;
 	border: 1px solid #e0e0e0;
 	z-index: 99;
