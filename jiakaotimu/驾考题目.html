@@ -132,6 +132,7 @@
 				width: 550px;
 				top: 325px;
 				left: 25px;
+				cursor: pointer;
 				/*margin-left: 25px;*/
 				/*background-color: darkblue;*/
 			}
@@ -540,7 +541,7 @@
 				if(y>300){
 					getE('.nav-left')[0].scrollTop=y-300;//设置父元素滚动条
 				}else{
-					getE('.nav-left')[0].scrollTop=y;
+					getE('.nav-left')[0].scrollTop=0;
 				}
 				
 //				confirm(y);

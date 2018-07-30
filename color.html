@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>color</title>
+		<style type="text/css">
+			p {
+				font-size: 12px;
+				/*display: inline-block;*/
+			}
+			div{
+				display: inline-block;
+				margin-left:1px;
+				text-align: center;
+			}
+		</style>
+	</head>
+	<body>
+		<div id="outer">
+			
+		</div>
+		<script>
+			var outer = document.querySelector('#outer');
+			
+			for(var r=0;r<=255;r+=5){
+				for(var g=0;g<=255;g+=5){
+					for(var b=0;b<=255;b+=5){
+						var p1 = document.createElement('p');
+						var div1 = document.createElement('div');
+						var div2 = document.createElement('div');
+						var attr1 = document.createAttribute('style');
+						var text1 = document.createTextNode('rgb('+ r + ','+ g + ','+ b +')');
+						p1.appendChild(text1);
+						attr1.value = 'display:inline-block;font-size:10px;width:100px;height:30px;background-color:rgb('+ r + ',' + g + ',' + b +');';
+						div1.setAttributeNode(attr1);
+						div2.appendChild(p1);
+						div2.appendChild(div1);
+						outer.appendChild(div2);
+					}
+				}
+
+			}
+		</script>
+	</body>
+</html>
